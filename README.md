@@ -1,7 +1,4 @@
-# f4code1
-Sure! Here’s a well-structured README template for your Flask project that includes SQLAlchemy and Flask-Migrate. You can customize it as needed.
 
-```markdown
 # Hero Management System
 
 A Flask web application for managing heroes and their powers, built using SQLAlchemy for database interaction and Flask-Migrate for handling database migrations.
@@ -37,36 +34,30 @@ A Flask web application for managing heroes and their powers, built using SQLAlc
 
    ```bash
    git clone https://github.com/Rickfalton/f4code1
-   cd hero-management-system
+   cd f4code1
    ```
 
-2. **Create a virtual environment**:
+2. **Running the Application**:
 
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate 
+ ```bash
+   code . 
    ```
 
 3. **Install the required packages**:
 
    ```bash
-   pip install -r requirements.txt
+   pipenv install
+   pipenv shell
    ```
 
-4. **Set up your database**:
-
-   ```bash
-   flask db init
-   flask db migrate -m "Initial migration."
-   flask db upgrade
-   ```
 
 ## Usage
 
 1. **Run the application**:
 
    ```bash
-   flask run
+   cd server
+   python3 app.py
    ```
 
 2. **Access the API**:
@@ -101,7 +92,6 @@ flask db upgrade
 
 ## Contributing
 
-Contributions are welcome! Please open an issue or submit a pull request.
 
 1. Fork the repository.
 2. Create your feature branch (`git checkout -b feature/YourFeature`).
